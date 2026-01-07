@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Welcome to my simple calculator page!</h2>
+<p id="numbers"></p>
+<p id="number"></p>
+<p id="result"></p>
+<p id="resul"></p>
+<p id="resu"></p>
+<script>
+// Step 1: Get two numbers using prompt
+let num1 = Number(prompt("Enter the first number:"));
+let num2 = Number(prompt("Enter the second number:"));
+// Step 2: Perform operations
+let sum = num1 + num2;
+let diff = num1 - num2;
+let mul = num1 + num2;
+// Step 3: Display numbers and results using document.write()
+// Display the numbers
+document.write("1st Number: " + num1);
+document.write("<br>");
+document.write("2nd Number: " + num2);
+document.write("<br>");
+// Display the sum
+document.write("Addition: " + sum);
+document.write("<br>");
+document.write("Subtraction: " + diff);
+document.write("<br>");
+document.write("Multiplication: " + mul);
+document.write("<br>");
+// Step 4: Display results using innerHTML
+// Display the numbers
+document.getElementById("numbers").innerHTML =
+ "1st Number: " + num1 + "<br>";
+document.getElementById("number").innerHTML =
+"2nd Number: " + num2 + "<br>";
+// Display the sum
+document.getElementById("result").innerHTML =
+ "Addition: " +  sum + "<br>";
+ document.getElementById("resul").innerHTML =
+ "Subtraction: " +  diff + "<br>";
+ document.getElementById("resu").innerHTML =
+ "Multiplication: " +  mul + "<br>";
+</script>
+</body>
+</html>
